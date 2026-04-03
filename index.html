@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCF - Transport en Commune Furry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>TCF - Transport en Commune Furry</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Nos Lignes</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bienvenue sur le site des transports en commune furry !</h2>
+    <p>Découvrez nos lignes de bus et faites voyager vos amis furry de manière écologique.</p>
+  </section>
+
+  <section class="map">
+      <h2>Nos Lignes</h2>
+      <p>Découvrez nos lignes de transport, que ce soit en tram ou en métro !</p>
+
+      <div class="lines">
+          <div class="line-group">
+              <h3>Trams</h3>
+              <ul>
+                  <li><button onclick="showLineInfo('T1')">Tram T1</button></li>
+                  <li><button onclick="showLineInfo('T2')">Tram T2</button></li>
+                  <li><button onclick="showLineInfo('T3')">Tram T3</button></li>
+                  <li><button onclick="showLineInfo('T4')">Tram T4</button></li>
+                  <li><button onclick="showLineInfo('T5')">Tram T5</button></li>
+                  <li><button onclick="showLineInfo('T6')">Tram T6</button></li>
+                  <li><button onclick="showLineInfo('T7')">Tram T7</button></li>
+                  <li><button onclick="showLineInfo('T8')">Tram T8</button></li>
+                  <li><button onclick="showLineInfo('T9')">Tram T9</button></li>
+                  <li><button onclick="showLineInfo('T10')">Tram T10</button></li>
+              </ul>
+          </div>
+
+          <div class="line-group">
+              <h3>Métros</h3>
+              <ul>
+                  <li><button onclick="showLineInfo('Métro A')">Métro A</button></li>
+                  <li><button onclick="showLineInfo('Métro B')">Métro B</button></li>
+                  <li><button onclick="showLineInfo('Métro C')">Métro C</button></li>
+                  <li><button onclick="showLineInfo('Métro D')">Métro D</button></li>
+                  <li><button onclick="showLineInfo('Métro E')">Métro E</button></li>
+                  <li><button onclick="showLineInfo('Métro F')">Métro F</button></li>
+                  <li><button onclick="showLineInfo('Métro R')">Métro R</button></li>
+              </ul>
+          </div>
+      </div>
+
+      <div id="line-info" class="line-info">
+          <!-- Informations sur la ligne sélectionnée -->
+          <h3>Informations sur la ligne</h3>
+          <p id="line-description">Cliquez sur une ligne pour plus d'informations.</p>
+      </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contactez-nous</h2>
+    <form id="contact-form">
+      <label for="name">Nom:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 TCF - Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
